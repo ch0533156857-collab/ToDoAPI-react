@@ -4,7 +4,7 @@ import axios from 'axios';
 // 1️⃣ יצירת אינסטנס עם baseURL
 // -----------------------------
 const api = axios.create({
-  baseURL: 'http://localhost:5106', // ה-API שלך
+baseURL: process.env.REACT_APP_API_URL || 'http://localhost:5106',
 });
 
 // -----------------------------
